@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite">
+	<test name="ChromeBrowser">
+		<parameter name="BROWSER" value="chrome"></parameter>
+		<classes>
+			<class name="grid.Ptc1Test" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="FirefoxBrowser">
+		<parameter name="BROWSER" value="firefox"></parameter>
+		<classes>
+			<class name="grid.Ptc2Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!--
+Suite -->
